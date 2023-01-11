@@ -1,0 +1,99 @@
+.companyVisual .inner {
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+}
+
+.companyVisual .tit {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    text-align: right;
+    z-index: 999;
+    font-size: 100px;
+}
+
+.companyVisual .tit h2 {
+    margin-bottom: 10px;
+}
+
+.companyVisual .tit span {
+    font-size: 80px;
+}
+
+.companyVisual figure {
+    position: absolute;
+}
+
+.companyVisual .c01 {
+    top: 100px;
+    left: 100px;
+    width: 550px;
+}
+
+.companyVisual .c01::after {
+    content: "";
+    position: absolute;
+    top: 300px;
+    right: -140px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: rgba(138, 187, 42, 0.5);
+}
+
+.companyVisual .c02 {
+    bottom: 55%;
+    right: 0;
+}
+
+.companyVisual .c03 {
+    top: 50px;
+    left: 0;
+}
+
+/* company visual */
+.flex {
+    gap: 30px;
+}
+
+.left {
+    flex: 1;
+}
+
+.left h2 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.left h2::before {
+    content: "";
+    display: inline-block;
+    margin-right: 10px;
+    width: 35px;
+    height: 2px;
+    background: #666;
+}
+
+.right {
+    flex: 2;
+}
+
+.companyIntrodution {
+    background: #fff;
+}
+
+.companyIntrodution .right strong {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.companyIntrodution .right p {
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+/* introdution */

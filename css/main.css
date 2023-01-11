@@ -3,6 +3,7 @@
     top: 0;
     left: 0;
     right: 0;
+    background: #f9f9f9;
     line-height: 100px;
     z-index: 999;
 }
@@ -45,7 +46,7 @@
     right: 0;
     transform: translate(0, -50%);
 
-    font-size: 70px;
+    font-size: 64px;
     font-weight: 300;
 }
 
@@ -54,7 +55,7 @@
     bottom: 100px;
     right: 100px;
 
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
 }
 
@@ -83,11 +84,11 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 484px;
-    height: 750px;
+    height: 730px;
 }
 
 .mainVisual .img_case img {
-    width: 484px;
+    width: 465px;
 }
 
 .mainVisual .img_case .img_top {
@@ -107,7 +108,7 @@
 
 .mainVisual .img_case .img_btm img:first-child {
     position: absolute;
-    bottom: 55%;
+    bottom: 57%;
     left: 0;
 }
 
@@ -134,6 +135,9 @@
 }
 
 /* main visual */
+.mainContent {
+    background: #fff;
+}
 
 .mainContent h2 {
     font-size: 50px;
@@ -143,17 +147,7 @@
 }
 
 .main_content_case {
-    position: relative;
-}
-
-.main_content_case::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    z-index: 999;
+    transition: 0.4s;
 }
 
 .main_content_case>div {
@@ -162,20 +156,22 @@
 
 .mainContent .text_box ul {
     position: relative;
-    width: 750px;
+    width: 690px;
+    height: 100%;
     margin-left: auto;
 }
 
 .mainContent .text_box ul li {
     position: absolute;
-    top: 350px;
+    bottom: 100px;
     left: 0;
 
-    display: none;
+    opacity: 0;
+    transition: 0.4s;
 }
 
 .mainContent .text_box ul li.on {
-    display: block;
+    opacity: 1;
 }
 
 .mainContent .text_box ul li strong {
@@ -192,9 +188,173 @@
 
 .mainContent .text_box ul li a {
     padding: 5px 35px;
-    border: 1px solid #ddd;
+    border: 1px solid #999;
 }
 
 .main_content_case .img_slide {
     overflow: hidden;
+}
+
+.main_content_case .img_slide figure {
+    height: 600px;
+}
+
+/* main content */
+.mainProduct {
+    padding: 100px 0 0 0;
+}
+
+.mainProduct .inner {
+    position: relative;
+    width: 1200px;
+    padding-bottom: 45px;
+}
+
+.mainProduct h2 {
+    font-size: 50px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.mainProduct .inner ul li {
+    position: absolute;
+    line-height: 1.45;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.mainProduct .inner ul li span {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.mainProduct .inner ul li:nth-child(1) {
+    top: 0;
+    left: 150px;
+}
+
+.mainProduct .inner ul li:nth-child(1).on span {
+    text-shadow: 2px 2px 2px rgba(210, 139, 121, 0.7);
+}
+
+.mainProduct .inner ul li:nth-child(2) {
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+}
+
+.mainProduct .inner ul li:nth-child(2).on span {
+    text-shadow: 2px 2px 2px rgb(179, 229, 241);
+}
+
+.mainProduct .inner ul li:nth-child(3) {
+    bottom: 100px;
+    left: 100px;
+
+}
+
+.mainProduct .inner ul li:nth-child(3).on span {
+    text-shadow: 2px 2px 2px rgb(211, 231, 173);
+}
+
+.mainProduct .main_product_img {
+    width: 750px;
+    height: 750px;
+    margin: 0 auto;
+    font-size: 0;
+    background: url(../img/mp01.png) no-repeat center center/contain;
+    transition: 0.5s;
+}
+
+/* main product */
+.footer {
+    background: #13394a;
+    color: #fff;
+    line-height: 1.3;
+}
+
+.footer .foot_top {
+    background: url(../img/footer_bg.png)no-repeat center center/cover;
+    padding: 70px 0;
+}
+
+.footer .foot_top strong {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 45px;
+    letter-spacing: 1px;
+}
+
+.footer .foot_top p {
+    font-size: 15px;
+    font-weight: 300;
+    opacity: 0.8;
+    margin-bottom: 40px;
+}
+
+.footer .foot_top a {
+    padding: 13px 20px 15px 20px;
+    background: #96b6d6;
+    font-size: 18px;
+}
+
+.footer .foot_top a i {
+    margin-left: 40px;
+}
+
+.footer .foot_btm {
+    padding: 70px 0 100px 0;
+    font-weight: 100;
+    opacity: 0.8;
+}
+
+.footer .foot_btm .inner {
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.footer .foot_btm .inner>* {
+    flex: 1;
+}
+
+.footer .foot_btm .logo img {
+    width: 200px;
+}
+
+.footer .foot_btm .contact span {
+    display: block;
+}
+
+.footer .foot_btm .privacy {
+    font-weight: 400;
+}
+
+.footer .foot_btm .copy {
+    width: 1290px;
+    margin-left: auto;
+    font-size: 14px;
+}
+
+/* footer */
+
+.to_top {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 100px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.to_top.on {
+    opacity: 1;
+    visibility: visible;
+}
+
+.to_top img {
+    width: 100%;
 }

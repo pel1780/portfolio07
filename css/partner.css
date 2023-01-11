@@ -1,0 +1,52 @@
+body {
+    background: #fff;
+}
+
+.partnerVisual {
+    overflow: hidden;
+}
+
+.partnerVisual .inner {
+    position: relative;
+}
+
+.partnerVisual .tit {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+}
+
+.partnerVisual h2 {
+    font-size: 100px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.partnerVisual p {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.partnerVisual span {
+    position: absolute;
+    bottom: 105px;
+    right: -410px;
+    transform: rotate(-90deg);
+    font-size: 150px;
+    font-weight: 900;
+    color: #ddd;
+}
+
+/* partner visual */
+
+.partnerTab .tab_content li .des {
+    flex: 2;
+}
+
+.partnerTab .tab_content li .partner_logo {
+    flex: 1;
+}
+
+.partnerTab .tab_content li .partner_logo img {
+    width: 100%;
+}

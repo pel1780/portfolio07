@@ -8,7 +8,7 @@ body {
 }
 
 .inner {
-    width: 1500px;
+    width: 1380px;
     margin: 0 auto;
 }
 
@@ -31,5 +31,6 @@ body {
 }
 
 * {
-    outline: 1px solid to-mato;
+    outline: 1px solid toma-to;
+    word-break: keep-all;
 }
