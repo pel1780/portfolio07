@@ -4,6 +4,7 @@ body {
 
 .partnerVisual {
     overflow: hidden;
+    padding: 100px 0 0 0;
 }
 
 .partnerVisual .inner {
@@ -43,10 +44,89 @@ body {
     flex: 2;
 }
 
+.partnerTab .tab_content li {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.partnerTab .tab_content li.on {
+    height: 100%;
+    opacity: 1;
+}
+
 .partnerTab .tab_content li .partner_logo {
     flex: 1;
+    text-align: center;
 }
 
 .partnerTab .tab_content li .partner_logo img {
+    height: 90px;
+}
+
+.partnerTab .tab_menu {
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.partnerTab .tab_menu li {
+    flex: 1;
+    border: 1px solid #ededed;
+    transition: 0.3s;
+}
+
+.partnerTab .tab_menu li.on {
+    border: 1px solid #ddd;
+}
+
+.partnerTab .tab_menu button {
+    padding: 40px 0 20px 20px;
     width: 100%;
+    text-align: left;
+}
+
+.partnerTab .tab_menu span {
+    display: block;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.partnerTab .tab_menu span::after {
+    content: "";
+    display: block;
+    margin: 13px 0 10px 0;
+    width: 30px;
+    height: 3px;
+    background: #ddd;
+    transition: 0.3s;
+}
+
+.partnerTab .tab_menu li.on span::after {
+    background: #ffe601;
+}
+
+.partnerTab .tab_menu strong {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.partnerTab h2 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.partnerTab h2::before {
+    content: "";
+    display: inline-block;
+    margin-right: 10px;
+    width: 35px;
+    height: 2px;
+    background: #666;
+}
+
+.partnerTab .tab_content .des {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.3;
 }

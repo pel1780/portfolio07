@@ -30,6 +30,10 @@ body {
     width: 100%;
 }
 
+p {
+    word-break: keep-all;
+}
+
 * {
     outline: 1px solid toma-to;
     word-break: keep-all;

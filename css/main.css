@@ -134,6 +134,33 @@
     border-radius: 50%;
 }
 
+.mainVisual .scrolldown {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 20px;
+    color: #ddd;
+}
+
+.mainVisual .scrolldown::after {
+    content: "\e936";
+    font-family: xeicon;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 50px;
+    animation: down 1s infinite linear;
+    animation-direction: alternate;
+}
+
+@keyframes down {
+    to {
+        transform: translate(-50%, 10px);
+    }
+}
+
 /* main visual */
 .mainContent {
     background: #fff;

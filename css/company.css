@@ -1,6 +1,10 @@
+.companyVisual {
+    padding-top: 100px;
+}
+
 .companyVisual .inner {
     position: relative;
-    height: 600px;
+    height: 645px;
     overflow: hidden;
 }
 

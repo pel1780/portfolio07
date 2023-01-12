@@ -1,4 +1,9 @@
 $(function () {
+    $('.scrolldown a').on('click', function (event) {
+        event.preventDefault();
+        $('html, body').animate({ scrollTop: $(this.hash).offset().top - 100 }, 1000);
+    })
+
     $(window).on('mousemove', function (e) {
         let X = e.pageX;
         let Y = e.pageY;
@@ -61,7 +66,6 @@ $(function () {
     $('.img_slide').on('init afterChange', function (e, s, c) {
         // console.log(c);
         $('.mainContent .text_box ul li').eq(c).addClass('on').siblings().removeClass('on');
-
         $('.main_content_case').css({ background: bgColor[c] })
     });
     // main slide
@@ -71,7 +75,6 @@ $(function () {
         $('.mainProduct .main_product_img').css({
             'background-image': 'url(' + change_image + ')'
         });
-
 
         $(this).addClass('on').siblings().removeClass('on');
     });
@@ -89,6 +92,26 @@ $(function () {
     $('.to_top').on('click', function () {
         $('html, body').stop().animate({ scrollTop: 0 }, 600)
     })
+
+    /////// main script
+
+
+
+    $('.tab_menu li button').on('click', function () {
+        var idx = $(this).parent().index();
+        console.log($(this).parent().index());
+        $('.tab_content li').removeClass('on');
+        $('.tab_content li').eq(idx).addClass('on');
+
+        // $('.tab_content li').addClass('on');
+
+        $('.tab_menu li').removeClass('on');
+        $(this).parent().addClass('on');
+    });
+
+
+
+    /////// partner script
 
 
 
